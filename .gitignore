@@ -1,0 +1,30 @@
+# Python
+*.pyc
+__pycache__/
+
+# Environnements virtuels
+venv/
+env/
+
+# Fichiers de configuration d'IDE
+.idea/
+.vscode/
+
+# Fichiers de logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de test
+test_output/
+
+# Ignore les fichiers temporaires dans mlruns mais garder les artefacts
+mlruns/**/artifacts/*
+mlruns/**/meta/*
+mlruns/**/metrics/*
+mlruns/**/params/*
+mlruns/**/tags/*
+!mlruns/**/artifacts/**  # Garder tous les artefacts
+!mlruns/**/model/*        # Garder les modèles dans 'model/'
